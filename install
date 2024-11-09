@@ -1,0 +1,18 @@
+
+
+ conda create --name lamabalolo -c anaconda python=3.8.18 
+
+conda activate lambalolo
+
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+
+pip install matplotlib
+pip install networkx
+pip install pandas
+
+
+
+pip install --no-index torch-sparse -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
+pip install --no-index torch-scatter -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
+pip install --no-index torch-cluster -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
+pip install --no-index torch-spline-conv -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
